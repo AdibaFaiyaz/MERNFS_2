@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border: 0.2px solid gray;
+            margin: 30px;
+            border-radius: 6px;
+        }
+
+        th {
+            text-align: center;
+            padding: 10px 0px 10px 0px;
+            background-color: rgb(170, 222, 236);
+        }
+
+        td {
+            padding: 10px 50px 10px 50px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .one {
+            background-color: rgb(233, 241, 240);
+        }
+
+        .two {
+            background-color: white;
+        }
+
+        @keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+body {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #5dabc5;
+    /* background-color: #e081ad; */
+    overflow: hidden;
+}
+.background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 19s linear infinite;
+}
+
+
+
+
+.background li:nth-child(0) {
+    left: 19%;
+    width: 34px;
+    height: 34px;
+    bottom: -34px;
+    animation-delay: 0.2s;
+}
+.background li:nth-child(1) {
+    left: 18%;
+    width: 65px;
+    height: 65px;
+    bottom: -65px;
+    animation-delay: 0.3s;
+}
+.background li:nth-child(2) {
+    left: 10%;
+    width: 35px;
+    height: 35px;
+    bottom: -35px;
+    animation-delay: 5s;
+}
+.background li:nth-child(3) {
+    left: 84%;
+    width: 16px;
+    height: 16px;
+    bottom: -16px;
+    animation-delay: 13s;
+}
+.background li:nth-child(4) {
+    left: 66%;
+    width: 65px;
+    height: 65px;
+    bottom: -65px;
+    animation-delay: 19s;
+}
+.background li:nth-child(5) {
+    left: 37%;
+    width: 42px;
+    height: 42px;
+    bottom: -42px;
+    animation-delay: 13s;
+}
+.background li:nth-child(6) {
+    left: 65%;
+    width: 39px;
+    height: 39px;
+    bottom: -39px;
+    animation-delay: 22s;
+}
+.background li:nth-child(7) {
+    left: 88%;
+    width: 56px;
+    height: 56px;
+    bottom: -56px;
+    animation-delay: 2s;
+}
+.background li:nth-child(8) {
+    left: 96%;
+    width: 55px;
+    height: 55px;
+    bottom: -55px;
+    animation-delay: 26s;
+}
+.background li:nth-child(9) {
+    left: 26%;
+    width: 37px;
+    height: 37px;
+    bottom: -37px;
+    animation-delay: 12s;
+}
+.background li:nth-child(10) {
+    left: 33%;
+    width: 102px;
+    height: 102px;
+    bottom: -102px;
+    animation-delay: 2s;
+}
+.background li:nth-child(11) {
+    left: 78%;
+    width: 107px;
+    height: 107px;
+    bottom: -107px;
+    animation-delay: 2s;
+}
+.background li:nth-child(12) {
+    left: 38%;
+    width: 114px;
+    height: 114px;
+    bottom: -114px;
+    animation-delay: 23s;
+}
+.background li:nth-child(13) {
+    left: 75%;
+    width: 143px;
+    height: 143px;
+    bottom: -143px;
+    animation-delay: 19s;
+}
+.background li:nth-child(14) {
+    left: 41%;
+    width: 133px;
+    height: 133px;
+    bottom: -133px;
+    animation-delay: 30s;
+}
+.background li:nth-child(15) {
+    left: 87%;
+    width: 108px;
+    height: 108px;
+    bottom: -108px;
+    animation-delay: 12s;
+}
+.background li:nth-child(16) {
+    left: 25%;
+    width: 163px;
+    height: 163px;
+    bottom: -163px;
+    animation-delay: 17s;
+}
+.background li:nth-child(17) {
+    left: 11%;
+    width: 157px;
+    height: 157px;
+    bottom: -157px;
+    animation-delay: 12s;
+}
+.background li:nth-child(18) {
+    left: 78%;
+    width: 85px;
+    height: 85px;
+    bottom: -85px;
+    animation-delay: 73s;
+}
+.background li:nth-child(19) {
+    left: 70%;
+    width: 151px;
+    height: 151px;
+    bottom: -151px;
+    animation-delay: 85s;
+}
+.background li:nth-child(20) {
+    left: 99%;
+    width: 113px;
+    height: 113px;
+    bottom: -113px;
+    animation-delay: 85s;
+}
+.background li:nth-child(21) {
+    left: 3%;
+    width: 100px;
+    height: 100px;
+    bottom: -100px;
+    animation-delay: 58s;
+}
+.background li:nth-child(22) {
+    left: 70%;
+    width: 149px;
+    height: 149px;
+    bottom: -149px;
+    animation-delay: 58s;
+}
+.background li:nth-child(23) {
+    left: 65%;
+    width: 116px;
+    height: 116px;
+    bottom: -116px;
+    animation-delay: 100s;
+}
+.background li:nth-child(24) {
+    left: 29%;
+    width: 71px;
+    height: 71px;
+    bottom: -71px;
+    animation-delay: 97s;
+}
+.background li:nth-child(25) {
+    left: 85%;
+    width: 145px;
+    height: 145px;
+    bottom: -145px;
+    animation-delay: 63s;
+}
+.background li:nth-child(26) {
+    left: 13%;
+    width: 125px;
+    height: 125px;
+    bottom: -125px;
+    animation-delay: 24s;
+}
+.background li:nth-child(27) {
+    left: 38%;
+    width: 73px;
+    height: 73px;
+    bottom: -73px;
+    animation-delay: 111s;
+}
+.background li:nth-child(28) {
+    left: 66%;
+    width: 62px;
+    height: 62px;
+    bottom: -62px;
+    animation-delay: 56s;
+}
+.background li:nth-child(29) {
+    left: 33%;
+    width: 41px;
+    height: 41px;
+    bottom: -41px;
+    animation-delay: 4s;
+}
+.background li:nth-child(30) {
+    left: 5%;
+    width: 66px;
+    height: 66px;
+    bottom: -66px;
+    animation-delay: 119s;
+}
+.background li:nth-child(31) {
+    left: 73%;
+    width: 104px;
+    height: 104px;
+    bottom: -104px;
+    animation-delay: 13s;
+}
+.background li:nth-child(32) {
+    left: 35%;
+    width: 166px;
+    height: 166px;
+    bottom: -166px;
+    animation-delay: 152s;
+}
+.background li:nth-child(33) {
+    left: 21%;
+    width: 12px;
+    height: 12px;
+    bottom: -12px;
+    animation-delay: 143s;
+}
+.background li:nth-child(34) {
+    left: 87%;
+    width: 74px;
+    height: 74px;
+    bottom: -74px;
+    animation-delay: 156s;
+}
+.background li:nth-child(35) {
+    left: 62%;
+    width: 37px;
+    height: 37px;
+    bottom: -37px;
+    animation-delay: 82s;
+}
+    </style>
+</head>
+
+<body>
+    <div class="d-flex flex-column justify-content-center w-100 h-100">
+        <center>
+            <table cellspacing="0">
+                <tr>
+                    <th colspan="2">INDEX</th>
+                </tr>
+                <tr class="one">
+                    <td>BS Task 1</td>
+                    <td><a href="./task13_bs1.html" target="_blank">Task 1</a></td>
+                </tr>
+                <tr class="two">
+                    <td>BS Task 2</td>
+                    <td><a href="./task14_bs2.html" target="_blank">Task 2</a></td>
+                </tr>
+                <tr class="one">
+                    <td>BS Task 3</td>
+                    <td><a href="./task15_bs3.html" target="_blank">Task 3</a></td>
+                </tr>
+                <tr class="two">
+                    <td>BS Task 4</td>
+                    <td><a href="./task16_bs4.html" target="_blank">Task 4</a></td>
+                </tr>
+                <tr class="one">
+                    <td>BS Task 5</td>
+                    <td><a href="./task17_bs5.html" target="_blank">Task 5</a></td>
+                </tr>
+                <tr class="two">
+                    <td>BS Task 6</td>
+                    <td><a href="./task18_bs6.html" target="_blank">Task 6</a></td>
+                </tr>
+                <tr class="one">
+                    <td>JS Task 1</td>
+                    <td><a href="./task19_js1.html" target="_blank">Task 7</a></td>
+                </tr>
+                <tr class="two">
+                    <td>JS Task 2</td>
+                    <td><a href="./task20_js2.html" target="_blank">Task 8</a></td>
+                </tr>
+                <tr class="one">
+                    <td>JS Task 3</td>
+                    <td><a href="./task21_js3.html" target="_blank">Task 9</a></td>
+                </tr>
+                <tr class="two">
+                    <td>JS Task 4</td>
+                    <td><a href="./task22_js4.html" target="_blank">Task 10</a></td>
+                </tr>
+                <tr class="one">
+                    <td>JS Task 5</td>
+                    <td><a href="./task23_js5.html" target="_blank">Task 11</a></td>
+                </tr>
+                <tr class="two">
+                    <td>JS Task 6</td>
+                    <td><a href="./task24_js6.html" target="_blank">Task 12</a></td>
+                </tr>
+                <tr class="one">
+                    <td>JS Task 7</td>
+                    <td><a href="./task25_js7.html" target="_blank">Task 13</a></td>
+                </tr>
+                <tr class="two">
+                    <td>JS Task 8</td>
+                    <td><a href="./task26_js8.html" target="_blank">Task 14</a></td>
+                </tr>
+            </table>
+        </center>
+    </div>
+
+    <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+     </ul>
+</body>
+
+</html>
