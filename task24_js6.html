@@ -52,84 +52,108 @@
             display: flex;
             justify-content: space-between;
         }
-        .lost{
+
+        .lost {
             color: gray;
         }
-        .deku{
+
+        .deku {
             margin: 10px 0 0 0;
         }
+
     </style>
 </head>
 
 <body>
-    <center>
-        <div class="box2">
-            <center>
-                <div class="box1">
-                    <center>
-                        <table>
-                            <tr>
-                                <th colspan="2">Instagram</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg"
-                                                width="16" height="16" fill="currentColor" class="bi bi-person-fill"
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-                                            </svg></span>
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="floatingInputGroup1"
-                                                placeholder="Username">
-                                            <label class="lost" for="floatingInputGroup1">Username</label>
+    <form name="myform" onsubmit="return validateform()" id="form" action="https://www.instagram.com">
+        <center>
+            <div class="box2">
+                <center>
+                    <div class="box1">
+                        <center>
+                            <table>
+                                <tr>
+                                    <th colspan="2">Instagram</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="input-group mb-3 input-control">
+                                            <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="currentColor" class="bi bi-person-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                                                </svg></span>
+                                            <div class="form-floating">
+                                                <input name="name" type="text" class="form-control" id="username"
+                                                    placeholder="Username">
+                                                <div class="error"></div>
+                                                <label class="lost" for="floatingInputGroup1">Username</label>
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg"
-                                                width="16" height="16" fill="currentColor" class="bi bi-lock-fill"
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />
-                                            </svg></span>
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="floatingInputGroup1"
-                                                placeholder="Username">
-                                            <label class="lost" for="floatingInputGroup1">Password</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="input-group mb-3 input-control">
+                                            <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="currentColor" class="bi bi-lock-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />
+                                                </svg></span>
+                                            <div class="form-floating">
+                                                <input name="password" type="text" class="form-control" id="password"
+                                                    placeholder="Username">
+                                                <div class="error"></div>
+                                                <label class="lost" for="floatingInputGroup1">Password</label>
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><button type="submit">Log in</button></td>
-                            </tr>
-                            <tr>
-                                <td class="hero">
-                                    <input type="checkbox" size="100" /> Remember me<a href="">Forgot Password? </a>
-                                </td>
-                                <!-- <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><button type="submit">Log in</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="hero">
+                                        <input type="checkbox" size="100" /> Remember me<a href="">Forgot Password? </a>
+                                    </td>
+                                    <!-- <td>
                             <a href="">Forgot Password? </a>
                         </td> -->
-                            </tr>
-                            <!-- <tr>
+                                </tr>
+                                <!-- <tr>
                                 <td colspan="2">Don't have an account! <a href="">Sign up here</a></td>
                             </tr> -->
 
-                        </table>
-                    </center>
-                </div>
-            <!-- <tr>
+                            </table>
+                        </center>
+                    </div>
+                    <!-- <tr>
                 <td colspan="2">Don't have an account! <a href="">Sign up here</a></td>
             </tr> -->
-            <span class="deku">Don't have an account! <a href="">Sign up here</a></span>
-            </center>
-        </div>
-    </center>
+                    <span class="deku">Don't have an account! <a href="">Sign up here</a></span>
+                </center>
+            </div>
+        </center>
+    </form>
+
+    <script>
+
+        function validateform() {
+            var name = document.myform.name.value;
+            var password = document.myform.password.value;
+
+            if (name == null || name == "") {
+                alert("Name can't be blank");
+                return false;
+            } else if (password.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return false;
+            }
+        }
+
+    </script>
 </body>
 
 </html>
